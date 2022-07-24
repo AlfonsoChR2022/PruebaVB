@@ -24,6 +24,7 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
         Me.SuspendLayout()
         '
         'Label1
@@ -31,15 +32,27 @@ Partial Class Form1
         Me.Label1.AutoSize = True
         Me.Label1.Location = New System.Drawing.Point(111, 29)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(100, 15)
+        Me.Label1.Size = New System.Drawing.Size(89, 15)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Hola, soy Alfonso"
+        Me.Label1.Text = "Hola, soy Pablo"
+        '
+        'RadioButton1
+        '
+        Me.RadioButton1.AutoSize = True
+        Me.RadioButton1.Location = New System.Drawing.Point(111, 62)
+        Me.RadioButton1.Name = "RadioButton1"
+        Me.RadioButton1.Size = New System.Drawing.Size(97, 19)
+        Me.RadioButton1.TabIndex = 1
+        Me.RadioButton1.TabStop = True
+        Me.RadioButton1.Text = "RadioButton1"
+        Me.RadioButton1.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.RadioButton1)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Form1"
         Me.Text = "Form1"
@@ -50,4 +63,5 @@ Partial Class Form1
 
     Friend WithEvents SaveFileDialog1 As SaveFileDialog
     Friend WithEvents Label1 As Label
+    Friend WithEvents RadioButton1 As RadioButton
 End Class
